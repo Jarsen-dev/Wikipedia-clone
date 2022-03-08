@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #54595d;
     --anchor-primary-color: #3366cc;
+    --primary-color: #54595d;
     --line-color: #c8ccd1;
     --anchor-primary-font-size: 1.6rem;
     --anchor-secondary-font-size: 1.4rem;
@@ -17,15 +17,126 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.3rem;
 }
+/*-----SPRITE SVG-----*/
 .sprite {
     background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-9ba8de1b.svg);
     background-repeat: no-repeat;
     display: inline-block;
     vertical-align: middle;
 }
-
 .svg-wiki {
-    background-position: 0 -446px;
+    background-position: 0 -254px;
     width: 176px;
     height: 32px;
+}
+/*-----HEADER-----*/
+header {
+    width: 100%;
+    height: 6.6rem;
+    text-align: center;
+}
+.header-wikilogo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto .5rem;
+}
+header .logo-v2{
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 17.5rem;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: .8rem;
+    color: #000000;
+}
+/*-----MAIN-----*/
+a {
+    text-decoration: none;
+}
+span {
+    color: var(--anchor-primary-color);
+    font-size: var(--anchor-primary-font-size);
+    font-weight: bold;
+}
+p {
+    color: var(--primary-color);
+}
+.main-lang-section {
+    position: relative;
+    width: 54.6rem;
+    height: 32.5rem;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 1.3rem auto 0;
+}
+.central-featured-lang {
+    position: absolute;
+    width: 15.6rem;
+    height: 4.58rem;
+}
+.lang-1 {
+    top: 0;
+    right: 60%;
+}
+.lang-2 {
+    top: 0;
+    left: 60%;
+}
+.lang-3 {
+    top: 20%;
+    right: 70%;
+}
+.lang-4 {
+    top: 20%;
+    left: 70%;
+}
+.lang-5 {
+    top: 40%;
+    right: 72%;
+}
+.lang-6 {
+    top: 40%;
+    left: 72%;
+}
+.lang-7 {
+    top: 60%;
+    right: 70%;
+}
+.lang-8 {
+    top: 60%;
+    left: 70%;
+}
+.lang-9 {
+    top: 80%;
+    right: 60%;
+}
+.lang-10 {
+    top: 80%;
+    left: 60%;
+}
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73%;
+    height: 4.4rem;
+}
+/*-----MAIN PSEUDOCLASES----*/
+.primary-box:active, .primary-box:focus {
+    outline: 1px solid #36c;
+}
+.primary-box:hover {
+    background-color: #eaecf0;
+}
+.primary-box:hover span {
+    text-decoration: underline;
 }
