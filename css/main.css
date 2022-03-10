@@ -64,6 +64,74 @@ body {
     width: 11rem;
     height: 3.8rem;
 }
+.commons-logo-sister {
+    background-position: -.6rem 0;
+    width: 3.5rem;
+    height: 4.7rem;
+}
+.wikivoyage-logo-sister {
+    background-position: 0 -44.6rem;
+    width: 3.4rem;
+    height: 3.4rem;
+}
+.wiktionary-logo-sister {
+    background-position: 0 -48.2rem;
+    width: 3.6rem;
+    height: 3.6rem;
+}
+.wikibooks-logo-sister {
+    background-position: 0 -12.6rem;
+    width: 3.7rem;
+    height: 3.7rem;
+}
+.wikinews-logo-sister {
+    background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikinews-logo_sister.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 0;
+    width: 4.7rem;
+    height: 2.5rem;
+}
+.wikidata-logo-sister {
+    background-position: -.3rem -17.3rem;
+    width: 4.4rem;
+    height: 2.6rem;
+}
+.wikiversity-logo-sister {
+    background-position: 0 -40.9rem;
+    width: 4.1rem;
+    height: 3.6rem;
+}
+.wikiquote-logo-sister {
+    background-position: 0 -28.3rem;
+    width: 3.9rem;
+    height: 4.5rem;
+}
+.mediawiki-logo-sister {
+    background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-e99844f6.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -4.7rem;
+    width: 4rem;
+    height: 4rem;
+}
+.wikisource-logo-sister {
+    background-position: 0 -32.8rem;
+    width: 3.9rem;
+    height: 3.9rem;
+}
+.wikispecies-logo-sister {
+    background-position: 0 -36.7rem;
+    width: 3.9rem;
+    height: 4.1rem;
+}
+.meta-wiki-logo-sister {
+    background-position: 0 -8.9rem;
+    width: 3.7rem;
+    height: 3.7rem;
+}
 /*-----HEADER-----*/
 header {
     width: 100%;
@@ -309,6 +377,35 @@ footer {
 }
 .app-download-text-container p {
     margin: 1.3rem 0;
+}
+.wikis-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.wiki-box {
+    float: left;
+    position: relative;
+    width: 33%;
+    height: 9rem;
+}
+.wiki-text-container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 1.3rem;
+}
+.wiki-text-container span {
+    font-size: var(--anchor-secondary-font-size);
+    font-weight: 400;
+}
+.wiki-text-container div:first-child {
+    
+}
+.wiki-text-container div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
 }
 /*-----MAIN PSEUDOCLASES----*/
 .primary-box:active, .primary-box:focus {
