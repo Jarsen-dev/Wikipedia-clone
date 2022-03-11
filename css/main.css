@@ -318,28 +318,6 @@ footer {
     display: flex;
     padding: 4.16rem 1.28rem 1.28rem;
 }
-/* .sidebar-container {
-    width: 35%;
-}
-.donation-section {
-    display: flex;
-    margin: 0 2rem 3rem 6rem;
-}
-.donation-text-container {
-    width: 28rem;
-    margin-left: 1rem;
-}
-.app-download-section {
-    display: flex;
-    width: 32rem;
-    margin: 0 2rem 0 6rem;
-    padding: 1rem;
-    background-color: #f8f9fa;
-}
-.app-download-text-container {
-    width: 28rem;
-    margin-left: 1rem;
-} */
 .sidebar-container {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -362,16 +340,17 @@ footer {
     width: 100%;
     height: 100%;
 }
-.app-download-text-container {
-    width: 35rem;
-    height: 19.7rem;
-    padding: .8rem 2rem .8rem 6rem;
+.app-download-container {
+    display: flex;
     background-color: #f8f9fa;
-    left: 4.8rem;
+    height: 19.8rem;
+    padding: .8rem 2rem 0 .8rem;
+    
 }
-.app-download-text-container .wikipedia-app-tile {
-    position: absolute;
-    left: 29.5rem;
+.app-download-text-container {
+    width: 27rem;
+    height: 19.7rem;
+    margin-left: 1rem;
 }
 .app-download-text-container strong {
     color: var(--primary-color);
@@ -406,6 +385,19 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.last-section-container .border {
+    margin: 2rem auto 0;
+}
+.licence-terms-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+}
+.licence-terms-container li {
+    text-align: center;
 }
 /*-----MAIN PSEUDOCLASES----*/
 .primary-box:active, .primary-box:focus {
@@ -442,4 +434,22 @@ footer {
     border-color: #36c;
     box-shadow: inset 0 0 0 1px #36c;
 }
-/*-----FOOTER PSEUDOCLASES-----*/
+/*-----FOOTER PSEUDOCLASES & PSEUDOELEMENTOS-----*/
+.donation-text-container a:hover {
+    text-decoration: underline;
+}
+.wiki-box .primary-box:hover span {
+    text-decoration: none;
+}
+.licence-terms-container a:first-child::after {
+    content: "•";
+    margin: 0 .8rem;
+    color: var(--primary-color);
+    cursor: default;
+}
+.licence-terms-container a:nth-child(2)::after {
+    content: "•";
+    margin: 0 .8rem;
+    color: var(--primary-color);
+    cursor: default;
+}
